@@ -5,3 +5,21 @@
   --gray: #d3d3d3ff;
   --coral: #ff6f61ff;
 }
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat", serif;
+}
+
+h1 {
+    font-weight: 900;
+}
+.btn {
+  width: 100%;
+  /* background-color: var(--blue); */
+  /* border-color: var(--blue); */
+  /* color: var(--green); */
+}
