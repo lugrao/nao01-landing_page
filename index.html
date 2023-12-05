@@ -9,17 +9,17 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
     <title>Caroline Sada - Curso de finanzas</title>
   </head>
   <body>
-    <section id="" title-decription>
+    <section id="title-description">
       <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -30,6 +30,14 @@
     <section id="contact-form">
       <form>
         <div class="mb-3">
+          <div class="mb-3">
+            <label for="first-name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="first-name" />
+          </div>
+          <div class="mb-3">
+            <label for="last-name" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="last-name" />
+          </div>
           <label for="email" class="form-label">Correo electrónico</label>
           <input
             type="email"
@@ -38,16 +46,8 @@
             aria-describedby="emailHelp"
           />
           <div id="emailHelp" class="form-text">
-            Nunca compartiremos tu dirección con nadie.
+            Nunca compartiremos tus datos con nadie.
           </div>
-        </div>
-        <div class="mb-3">
-          <label for="first-name" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="first-name" />
-        </div>
-        <div class="mb-3">
-          <label for="last-name" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="last-name" />
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
