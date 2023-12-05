@@ -8,18 +8,56 @@
 
 html {
   font-size: 16px;
+  height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: "Montserrat", serif;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
-    font-weight: 900;
+  font-weight: 900;
 }
+
+.sections-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#title-description {
+  width: 60%;
+  padding: 50px;
+}
+
+#contact-form {
+    /* justify-content: center; */
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
 .btn {
   width: 100%;
   /* background-color: var(--blue); */
   /* border-color: var(--blue); */
   /* color: var(--green); */
+}
+
+@media screen and (max-width: 810px) {
+  .sections-wrapper {
+    flex-direction: column;
+  }
+
+  #title-description {
+    width: 100%;
+  }
+
+  #contact-form {
+    max-width: 90%;
+    padding: 15px;
+  }
 }
