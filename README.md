@@ -1,1 +1,1 @@
-# Digital NAO - Reto 1 - Landing Page
+# Digital NAO - Front End Developer Core - Reto 1 - Landing Page
