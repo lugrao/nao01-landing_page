@@ -58,6 +58,7 @@ h2 {
 .form-title {
   font-size: 2rem;
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 .form-body {
