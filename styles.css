@@ -1,5 +1,5 @@
 :root {
-  --blue: #003366ff;
+  --blue: #062a4e;
   --coral: #ff6f61ff;
   --coral-light: #fff8f8;
   --coral-dark: #f05244;
@@ -13,6 +13,7 @@ html {
 
 body {
   font-family: "Montserrat", serif;
+  color: var(--blue);
   min-height: 100vh;
   background-color: var(--coral-light);
   padding: 0 30px;
