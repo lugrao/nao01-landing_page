@@ -1,29 +1,49 @@
 :root {
-  --pink: #ffc0cbff;
+  /* --pink: #ffc0cbff; */
+  --pink: rgb(255, 241, 244);
   --blue: #003366ff;
   --green: #98fb98ff;
   --gray: #d3d3d3ff;
   --coral: #ff6f61ff;
+  --coral-light: rgb(255, 248, 248);
 }
 
 html {
   font-size: 16px;
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 body {
   font-family: "Montserrat", serif;
-  height: 100%;
-  width: 100%;
+  min-height: 100vh;
+  background-color: var(--coral-light);
+  padding: 0 30px;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-weight: 900;
 }
 
-.sections-wrapper {
-  height: 100%;
+.title {
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  padding-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+.sections-container {
+  min-height: 100vh;
+  /* width: 100%; */
   display: flex;
   align-items: center;
 }
@@ -31,24 +51,62 @@ h1 {
 #title-description {
   width: 60%;
   padding: 50px;
+  display: inline-block;
 }
 
 #contact-form {
-    /* justify-content: center; */
-    max-width: 40%;
-    margin: 0 auto;
-    padding: 50px;
+  width: 400px;
+  max-width: 90%;
+  padding: 40px;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 7px rgb(249, 235, 235);
+}
+
+.form-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.form-body {
+  text-align: center;
+}
+
+.form-label {
+  font-size: 0.9rem;
 }
 
 .btn {
   width: 100%;
-  /* background-color: var(--blue); */
-  /* border-color: var(--blue); */
-  /* color: var(--green); */
+  font-size: 1rem;
+  /* font-weight: bold; */
+  background-color: var(--coral);
+  border-color: var(--coral);
+  /* color: var(--coral); */
+  margin-top: 10px;
+}
+
+.image-container {
+  width: 45%;
+  max-width: 400px;
+  min-width: 150px;
+  float: right;
+}
+
+img {
+  width: 100%;
 }
 
 @media screen and (max-width: 810px) {
-  .sections-wrapper {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    padding: 30px 0 80px;
+  }
+  .sections-container {
     flex-direction: column;
   }
 
@@ -57,7 +115,6 @@ h1 {
   }
 
   #contact-form {
-    max-width: 90%;
-    padding: 15px;
+    padding: 50px;
   }
 }
