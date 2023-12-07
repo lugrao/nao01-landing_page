@@ -1,3 +1,4 @@
+/* Color variables */
 :root {
   --blue: #062a4e;
   --coral: #ff6f61ff;
@@ -5,6 +6,10 @@
   --coral-dark: #f05244;
 }
 
+/*
+html's font size in pixels.
+In the rest of the document, font size in rem.
+*/
 html {
   font-size: 16px;
   min-height: 100%;
@@ -19,6 +24,7 @@ body {
   padding: 0 30px;
 }
 
+/* Headings weight */
 h1,
 h2 {
   font-weight: 900;
@@ -34,6 +40,7 @@ h2 {
   padding-bottom: 15px;
 }
 
+/* Using flexbox for managing both sections' responsiveness */
 .sections-container {
   min-height: 100vh;
   display: flex;
@@ -43,7 +50,6 @@ h2 {
 #title-description {
   width: 60%;
   padding: 50px;
-  display: inline-block;
 }
 
 #contact-form {
@@ -94,7 +100,10 @@ img {
   width: 100%;
 }
 
+/* Media query */
 @media screen and (max-width: 810px) {
+
+  /* Reduce font size in mobile */
   html {
     font-size: 14px;
   }
@@ -102,6 +111,8 @@ img {
   body {
     padding: 30px 0 80px;
   }
+
+  /* Sections shown in a column for mobile */
   .sections-container {
     flex-direction: column;
   }
