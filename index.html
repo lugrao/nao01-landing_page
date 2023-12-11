@@ -51,7 +51,7 @@
 
       <!-- Form section -->
       <section id="contact-form">
-        <form>
+        <form class="needs-validation" novalidate>
           <div>
             <h1 class="form-title">¡Anotate!</h1>
             <p class="form-body">
@@ -61,14 +61,29 @@
           <div class="mb-3">
             <div class="mb-3">
               <label for="first-name" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="first-name" />
+              <input
+                type="text"
+                class="form-control"
+                id="first-name"
+                required
+              />
+              <div class="valid-feedback">Espléndido.</div>
+              <div class="invalid-feedback">Por favor, ingresá tu nombre.</div>
             </div>
             <div class="mb-3">
               <label for="last-name" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id="last-name" />
+              <input type="text" class="form-control" id="last-name" required />
+              <div class="valid-feedback">Perfecto.</div>
+              <div class="invalid-feedback">
+                Por favor, ingresá tu apellido.
+              </div>
             </div>
             <label for="email" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="email" />
+            <input type="email" class="form-control" id="email" required />
+            <div class="valid-feedback">Genial.</div>
+            <div class="invalid-feedback">
+              Por favor, ingresá un e-mail válido.
+            </div>
           </div>
           <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
