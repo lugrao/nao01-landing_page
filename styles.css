@@ -76,12 +76,19 @@ h2 {
   font-size: 0.9rem;
 }
 
+.form-field {
+  padding-bottom: .4rem;
+}
+
+.form-field-filler {
+  padding-top: 25px;
+}
+
 .btn {
   width: 100%;
   font-size: 1rem;
   background-color: var(--coral);
   border-color: var(--coral);
-  margin-top: 10px;
 }
 
 .btn:hover {
@@ -102,7 +109,6 @@ img {
 
 /* Media query */
 @media screen and (max-width: 810px) {
-
   /* Reduce font size in mobile */
   html {
     font-size: 14px;
@@ -123,5 +129,9 @@ img {
 
   #contact-form {
     padding: 50px;
+  }
+
+  .form-field-filler {
+    padding-top: 21.8833px;
   }
 }

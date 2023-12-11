@@ -59,7 +59,7 @@
             </p>
           </div>
           <div class="mb-3">
-            <div class="mb-3">
+            <div class="form-field">
               <label for="first-name" class="form-label">Nombre</label>
               <input
                 type="text"
@@ -68,20 +68,23 @@
                 required
               />
               <div class="invalid-feedback">Por favor, ingresá tu nombre.</div>
+              <div class="form-field-filler"></div>
             </div>
-            <div class="mb-3">
+            <div class="form-field">
               <label for="last-name" class="form-label">Apellido</label>
               <input type="text" class="form-control" id="last-name" required />
               <div class="invalid-feedback">
                 Por favor, ingresá tu apellido.
               </div>
+              <div class="form-field-filler"></div>
             </div>
-            <div class="mb-3">
+            <div class="form-field">
               <label for="email" class="form-label">Correo electrónico</label>
               <input type="email" class="form-control" id="email" required />
               <div class="invalid-feedback">
                 Por favor, ingresá un e-mail válido.
               </div>
+              <div class="form-field-filler"></div>
             </div>
           </div>
           <button type="submit" class="btn btn-primary">Enviar</button>
@@ -101,7 +104,21 @@
               event.preventDefault();
               event.stopPropagation();
             }
+
             form.classList.add("was-validated");
+
+            const formFields = document.querySelectorAll(".form-field");
+
+            formFields.forEach((formField) => {
+              const invalidFeedbackDiv = formField.children[2];
+              const fillerDiv = formField.children[3];
+              const invalidFeedbackDivIsDisplayed =
+                window.getComputedStyle(invalidFeedbackDiv).display !== "none";
+
+              if (invalidFeedbackDivIsDisplayed) {
+                fillerDiv.style.display = "none";
+              }
+            });
           },
           false
         );
