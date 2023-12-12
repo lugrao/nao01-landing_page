@@ -122,6 +122,26 @@
           },
           false
         );
+
+        const inputs = document.querySelectorAll("input");
+
+        inputs.forEach((input) => {
+          input.addEventListener(
+            "input",
+            (event) => {
+              const invalidFeedbackDiv = input.nextElementSibling;
+              const fillerDiv = invalidFeedbackDiv.nextElementSibling;
+              const invalidFeedbackDivIsDisplayed =
+                window.getComputedStyle(invalidFeedbackDiv).display !== "none";
+              if (invalidFeedbackDivIsDisplayed) {
+                fillerDiv.style.display = "none";
+              } else {
+                fillerDiv.style.display = "block";
+              }
+            },
+            false
+          );
+        });
       })();
     </script>
   </body>
