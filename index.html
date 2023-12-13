@@ -31,7 +31,7 @@
       <section id="title-description">
         <h1 class="title">DOMINÁ TUS FINANZAS</h1>
         <div class="image-container">
-          <img src="woman-charts.svg" alt="Woman and charts." />
+          <img src="images/woman-charts.svg" alt="Woman and charts." />
         </div>
         <h2 class="subtitle">
           El curso definitivo para impulsar tu emprendimiento
@@ -89,6 +89,23 @@
           </div>
           <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
+        <div id="thank-you-message" class="hidden">
+          <h1>¡Listo!</h1>
+          <p>Gracias por tu interés en el curso.</p>
+          <p>En breve, recibirás un e-mail con todos los detalles.</p>
+          <p>
+            Mientras tanto, conocé los últimos consejos financieros que Caroline
+            preparó para vos:
+          </p>
+          <div class="social">
+            <a href="https://tiktok.com">
+              <img src="images/tiktok.svg" alt="Tik Tok link icon." />
+            </a>
+            <a href="https://instagram.com">
+              <img src="images/instagram.svg" alt="Instagram link icon." />
+            </a>
+          </div>
+        </div>
       </section>
     </div>
     <script>
@@ -102,9 +119,16 @@
         form.addEventListener(
           "submit",
           (event) => {
-            if (!form.checkValidity()) {
-              event.preventDefault();
-              event.stopPropagation();
+            event.preventDefault();
+            event.stopPropagation();
+
+            if (form.checkValidity()) {
+              const thankYouMessage =
+                document.querySelector("#thank-you-message");
+              form.remove();
+              thankYouMessage.classList.remove("hidden");
+              console.log(thankYouMessage.classList);
+              return;
             }
 
             form.classList.add("was-validated");
