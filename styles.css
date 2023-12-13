@@ -144,6 +144,10 @@ h2 {
   height: 2.5rem;
 }
 
+.social img:hover {
+  padding: 2px;
+}
+
 .image-container {
   width: 45%;
   max-width: 400px;
