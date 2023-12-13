@@ -20,7 +20,8 @@ form.addEventListener(
       const formSection = document.querySelector("#contact-form");
       const spinner = document.createElement("div");
       spinner.className = "spinner";
-      spinner.innerHTML = "<img src='images/spinner.svg' alt='spinner'/>";
+      spinner.innerHTML =
+        "<img src='images/spinner.svg' aria-valuetext='loading'/>";
       formSection.appendChild(spinner);
 
       // Remove spinner and show thank you message
