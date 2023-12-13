@@ -125,9 +125,15 @@
             if (form.checkValidity()) {
               const thankYouMessage =
                 document.querySelector("#thank-you-message");
-              form.remove();
+
+                // Remove form
+                form.remove();
+
+                // Show spinner
+                // TODO
+
+              // Show thank you message
               thankYouMessage.classList.remove("hidden");
-              console.log(thankYouMessage.classList);
               return;
             }
 
