@@ -52,6 +52,7 @@ h2 {
   padding: 50px;
 }
 
+/* Form section */
 #contact-form {
   width: 400px;
   max-width: 90%;
@@ -99,6 +100,7 @@ h2 {
   border: 1px solid var(--coral-dark) !important;
 }
 
+/* Animated spinner */
 .spinner {
   height: 100%;
   display: flex;
@@ -116,6 +118,7 @@ h2 {
   animation: rotate 1s linear infinite;
 }
 
+/* Thank you message with social links */
 #thank-you-message {
   text-align: center;
   display: flex;
@@ -152,6 +155,7 @@ img {
   width: 100%;
 }
 
+/* Hidden element's class */
 .hidden {
   display: none !important;
 }
