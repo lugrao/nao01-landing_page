@@ -132,10 +132,20 @@
               form.remove();
 
               // Show spinner
-              // TODO
+              const formSection = document.querySelector("#contact-form");
+              const spinner = document.createElement("div");
+              spinner.className = "spinner"
+              spinner.innerHTML =
+                "<img src='images/spinner.svg' alt='spinner'/>";
+              formSection.appendChild(spinner);
 
-              // Show thank you message
-              thankYouMessage.classList.remove("hidden");
+              // Remove spinner and show thank you message
+              function removeSpinnerAndShowThankYouMessage() {
+                spinner.remove();
+                thankYouMessage.classList.remove("hidden");
+              }
+
+              setTimeout(removeSpinnerAndShowThankYouMessage, 1500);
               return;
             }
 

@@ -99,6 +99,23 @@ h2 {
   border: 1px solid var(--coral-dark) !important;
 }
 
+.spinner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner img {
+  height: 3rem;
+  animation: rotate 1s linear infinite;
+}
+
 #thank-you-message {
   text-align: center;
   display: flex;
