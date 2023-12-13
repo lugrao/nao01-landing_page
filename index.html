@@ -89,6 +89,8 @@
           </div>
           <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
+
+        <!-- Thank you message. Shows after form submission -->
         <div id="thank-you-message" class="hidden">
           <h1>¡Listo!</h1>
           <p>Gracias por tu interés en el curso.</p>
@@ -126,11 +128,11 @@
               const thankYouMessage =
                 document.querySelector("#thank-you-message");
 
-                // Remove form
-                form.remove();
+              // Remove form
+              form.remove();
 
-                // Show spinner
-                // TODO
+              // Show spinner
+              // TODO
 
               // Show thank you message
               thankYouMessage.classList.remove("hidden");
