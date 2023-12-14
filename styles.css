@@ -45,6 +45,11 @@ h2 {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+#title-description {
+  max-width: 900px;
 }
 
 #title-description {
@@ -156,6 +161,7 @@ h2 {
 }
 
 img {
+  height: auto;
   width: 100%;
 }
 
