@@ -1,9 +1,13 @@
 /* Color variables */
 :root {
-  --blue: #062a4e;
-  --coral: #E12A19;
-  --coral-light: #fff8f8;
-  --coral-dark: #BC2315;
+  --primary: #28283A;
+  --secondary: #C54960;
+  --secondary-dark: #9F3246;
+  --terciary: #C96B95;
+  --terciary-alt: #C593CC;
+  --surface-shadow: #EAEAE1;
+  --surface: #F4F4F0;
+  --surface-bright: #FDFDFC;
 }
 
 /*
@@ -18,9 +22,9 @@ html {
 
 body {
   font-family: "Montserrat", serif;
-  color: var(--blue);
+  color: var(--primary);
   min-height: 100vh;
-  background-color: var(--coral-light);
+  background-color: var(--surface);
   padding: 0 30px;
 }
 
@@ -64,9 +68,9 @@ h2 {
   height: 562.5px;
   padding: 40px;
   margin: 20px 0;
-  background-color: white;
+  background-color: var(--surface-bright);
   border-radius: 15px;
-  box-shadow: 3px 3px 7px rgb(249, 235, 235);
+  box-shadow: 3px 3px 7px var(--surface-shadow);
 }
 
 .form-title {
@@ -95,15 +99,15 @@ h2 {
   width: 100%;
   font-size: 1rem;
   /* font-weight: bold; */
-  background-color: var(--coral);
-  border-color: var(--coral);
+  background-color: var(--secondary);
+  border-color: var(--secondary);
 }
 
 .btn:hover,
 .btn:active,
 .btn:focus-visible {
-  background-color: var(--coral-dark) !important;
-  border: 1px solid var(--coral-dark) !important;
+  background-color: var(--secondary-dark) !important;
+  border: 1px solid var(--secondary-dark) !important;
 }
 
 /* Animated spinner */
