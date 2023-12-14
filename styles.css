@@ -1,9 +1,9 @@
 /* Color variables */
 :root {
   --blue: #062a4e;
-  --coral: #f7594b;
+  --coral: #E12A19;
   --coral-light: #fff8f8;
-  --coral-dark: #ec4637;
+  --coral-dark: #BC2315;
 }
 
 /*
@@ -94,6 +94,7 @@ h2 {
 .btn {
   width: 100%;
   font-size: 1rem;
+  /* font-weight: bold; */
   background-color: var(--coral);
   border-color: var(--coral);
 }
