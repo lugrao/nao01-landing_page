@@ -1,13 +1,13 @@
 /* Color variables */
 :root {
-  --primary: #28283A;
-  --secondary: #C54960;
-  --secondary-dark: #9F3246;
-  --terciary: #C96B95;
-  --terciary-alt: #C593CC;
-  --surface-shadow: #EAEAE1;
-  --surface: #F4F4F0;
-  --surface-bright: #FDFDFC;
+  --primary: #28283a;
+  --secondary: #c54960;
+  --secondary-dark: #9f3246;
+  --terciary: #c96b95;
+  --terciary-alt: #c593cc;
+  --surface-shadow: #eaeae1;
+  --surface: #f4f4f0;
+  --surface-bright: #fdfdfc;
 }
 
 /*
