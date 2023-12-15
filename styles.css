@@ -52,11 +52,11 @@ h2 {
   justify-content: center;
 }
 
-#title-description {
+#info {
   max-width: 900px;
 }
 
-#title-description {
+#info {
   width: 60%;
   padding: 50px 50px 50px 0px;
 }
@@ -191,7 +191,7 @@ img {
     flex-direction: column;
   }
 
-  #title-description {
+  #info {
     width: 100%;
     padding: 50px;
   }
