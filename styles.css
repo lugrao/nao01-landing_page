@@ -58,7 +58,7 @@ h2 {
 
 #title-description {
   width: 60%;
-  padding: 50px;
+  padding: 50px 50px 50px 0px;
 }
 
 /* Form section */
@@ -193,6 +193,7 @@ img {
 
   #title-description {
     width: 100%;
+    padding: 50px;
   }
 
   #contact-form {
